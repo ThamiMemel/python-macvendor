@@ -5,7 +5,7 @@
 - Import it in your script/program or use it as CLI program
 
 # python-macvendor
-##Installation
+## Installation
 `pip install macvendor`
 ## Basic Usage
 ### As CLI program
