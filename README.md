@@ -61,4 +61,7 @@ Tabulate 0.8.6
 > XXXX:XXFF:FEXX:XXXX  
 > XXXX-XXFF-FEXX-XXXX  
 > XXXX.XXFF.FEXX.XXXX  
->>>>>>> 8aee24fa9cd26a71148ea05c1769333283ff536c
+
+## Version History
+
+1.0.11 : Initial PyPI release.
