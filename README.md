@@ -5,7 +5,7 @@
 - Import it in your script/program or use it as CLI program
 
 # python-macvendor
-##Installation
+## Installation
 `pip install macvendor`
 ## Basic Usage
 ### As CLI program
@@ -39,17 +39,16 @@ No Dependencies
 Tabulate 0.8.6
 ## MAC / OUI accepted formats
 *note: all patternes are case insensetive*
-> XX:XX:XX:XX:XX:XX
-> XX-XX-XX-XX-XX-XX
-> XX.XX.XX.XX.XX.XX
-> XXXXXXXXXXXX
-> XX:XX:XX:FF:FE:XX:XX:XX
-> XX-XX-XX-FF-FE-XX-XX-XX
-> XX.XX.XX.FF.FE.XX.XX.XX
-> XXXXXXFFFEXXXXXX
-> XXX:XXX:XXX:XXX
-> XXX-XXX-XXX-XXX
-> XXX.XXX.XXX.XXX
->XXXX:XXFF:FEXX:XXXX
-> XXXX-XXFF-FEXX-XXXX
-> XXXX.XXFF.FEXX.XXXX
+> XX:XX:XX:XX:XX:XX  
+> XX-XX-XX-XX-XX-XX  
+> XX.XX.XX.XX.XX.XX  
+> XXXXXXXXXXXX  
+> XX:XX:XX:FF:FE:XX:XX:XX  
+> XX-XX-XX-FF-FE-XX-XX-XX  
+> XX.XX.XX.FF.FE.XX.XX.XX  
+> XXX:XXX:XXX:XXX  
+> XXX-XXX-XXX-XXX  
+> XXX.XXX.XXX.XXX  
+>XXXX:XXFF:FEXX:XXXX  
+> XXXX-XXFF-FEXX-XXXX  
+> XXXX.XXFF.FEXX.XXXX  

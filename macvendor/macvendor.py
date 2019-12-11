@@ -1,6 +1,9 @@
 import argparse
 import sys
 import re
+import os
+
+PATH = os.path.dirname(os.path.realpath(__file__))
 
 #check if the MAC address is in a correct form return True if it is correct, else returns False
 def checkMacAddr(addr):
@@ -60,8 +63,8 @@ def lookup(addr, file, prefix = 6):
                     test[1] += getVendorFromFile(line)
                     if (cleanAddr(addr)[6:10] == "FFFE") and (len(cleanAddr(addr)) == 16):
                         addr = cleanAddr(addr)[0:6] + cleanAddr(addr)[10:] #Fix Problem with EUI-64 in the next two lines
-                    prefix24 = lookup(addr, "./data/prefix28",7) or ""
-                    prefix28 = lookup(addr, "./data/prefix36", 9) or ""
+                    prefix24 = lookup(addr, "{}/data/prefix28".format(PATH),7) or ""
+                    prefix28 = lookup(addr, "{}/data/prefix36".format(PATH), 9) or ""
                     test[1] += " - {} {}".format(prefix24[1], prefix28[1])
                 else:
                     test[1] += getVendorFromFile(line)
@@ -73,7 +76,7 @@ def getVendorList(plist):
     if (type(plist) is list) or (type(plist) is tuple):
         for addr in plist:
             if checkMacAddr(addr) or checkOUI(addr):
-                lookupData = lookup(addr, "./data/prefix24")
+                lookupData = lookup(addr, "{}/data/prefix24".format(PATH))
                 result[lookupData[0]] = lookupData[1]
             else:
                 result[addr] = "Invalide MAC or OUI format"
