@@ -9,7 +9,7 @@
 `pip install macvendor`
 ## Basic Usage
 ### As CLI program
-`$ macvendor.py -a 30:8d:99:15:c8:9A  00:01:42`
+`$ macvendor.py 30:8d:99:15:c8:9A  00:01:42`
 >| Mac               | Vendor             |
 >|-------------------|--------------------|
 >| 30:8d:99:15:c8:9A | Hewlett Packard    |
@@ -61,5 +61,5 @@ Tabulate 0.8.6
 > XXXX.XXFF.FEXX.XXXX  
 
 ## Version History
-1.0.12  : Refactoring command line arguments and options.
-1.0.11 : Initial PyPI release.
+1.0.12  : Refactoring command line arguments and options.  
+1.0.11 : Initial PyPI release.  
