@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: macvendor
-Version: 1.0.11
+Version: 1.0.12
 Summary: A Python Liberary and CLI Tool for Fiding Vendors of MAC Addresses
 Home-page: https://github.com/ThamiMemel/python-macvendor
 Author: Thami Memel
@@ -11,7 +11,7 @@ Project-URL: Source, https://github.com/ThamiMemel/python-macvendor
 Description: ### Features
         
         - Validate MAC Address / OUI (patterns are bellow)
-        - Get the manufactor of af a single or multiple MAC address/OUI
+        - Get the manufacture of af a single or multiple MAC address/OUI
         - Import it in your script/program or use it as CLI program
         
         # python-macvendor
@@ -19,14 +19,14 @@ Description: ### Features
         `pip install macvendor`
         ## Basic Usage
         ### As CLI program
-        `$ macvendor.py -a 30:8d:99:15:c8:9A  00:01:42`
+        `$ macvendor.py 30:8d:99:15:c8:9A  00:01:42`
         >| Mac               | Vendor             |
         >|-------------------|--------------------|
         >| 30:8d:99:15:c8:9A | Hewlett Packard    |
         >| 00-01-52-55-33-34 | Chromatek Inc.     |
         >| 00:01:42          | Cisco Systems, Inc |
         
-        ### As liberary
+        ### As library
         ```python
         from macvendor import getVendor
         
@@ -43,7 +43,7 @@ Description: ### Features
         
         
         ## 3d party Dependencies
-        ##### Usage as liberary
+        ##### Usage as library
         No Dependencies
         ##### Usage in command line
         Tabulate 0.8.6
@@ -59,9 +59,20 @@ Description: ### Features
         > XXX:XXX:XXX:XXX  
         > XXX-XXX-XXX-XXX  
         > XXX.XXX.XXX.XXX  
-        >XXXX:XXFF:FEXX:XXXX  
+        > XXXX:XXFF:FEXX:XXXX  
         > XXXX-XXFF-FEXX-XXXX  
         > XXXX.XXFF.FEXX.XXXX  
+        > XXXXXXFFFEXXXXXX  
+        > XXX:XXX:XXX:XXX  
+        > XXX-XXX-XXX-XXX  
+        > XXX.XXX.XXX.XXX  
+        > XXXX:XXFF:FEXX:XXXX  
+        > XXXX-XXFF-FEXX-XXXX  
+        > XXXX.XXFF.FEXX.XXXX  
+        
+        ## Version History
+        1.0.12  : Refactoring command line arguments and options.  
+        1.0.11 : Initial PyPI release.  
 Keywords: MAC vendors register OUI
 Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable

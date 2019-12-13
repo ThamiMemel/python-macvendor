@@ -16,7 +16,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name='macvendor',
 
-    version='1.0.11',
+    version='1.0.12',
 
     description='A Python Liberary and CLI Tool for Fiding Vendors of MAC Addresses',
     long_description=long_description,
