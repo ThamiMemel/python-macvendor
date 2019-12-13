@@ -4,6 +4,7 @@ import re
 import os
 
 PATH = os.path.dirname(os.path.realpath(__file__))
+VERSION = "1.0.12"
 
 #check if the MAC address is in a correct form return True if it is correct, else returns False
 def checkMacAddr(addr):
@@ -98,10 +99,13 @@ def formatTable(d):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-a", "--address", help="a valide MAC address or OUI", nargs="+")
+    parser.add_argument("-v", "--version", help="Displays version information.", action="store_true")
+    parser.add_argument("address", metavar="address", type=str, nargs="*", help="one or multiple valide MAC address or OUI to lookup")
     args = parser.parse_args()
     if args.address:    
         print(formatTable(getVendorList(args.address)))
+    if args.version:
+        print("verion {}".format(VERSION))
 
 if  __name__ == "__main__":
     main()

@@ -1,7 +1,7 @@
 ### Features
 
 - Validate MAC Address / OUI (patterns are bellow)
-- Get the manufactor of af a single or multiple MAC address/OUI
+- Get the manufacture of af a single or multiple MAC address/OUI
 - Import it in your script/program or use it as CLI program
 
 # python-macvendor
@@ -16,7 +16,7 @@
 >| 00-01-52-55-33-34 | Chromatek Inc.     |
 >| 00:01:42          | Cisco Systems, Inc |
 
-### As liberary
+### As library
 ```python
 from macvendor import getVendor
 
@@ -33,7 +33,7 @@ print(getVendorList(["30:8d:99:15:c8:9A", "00:01:42", "00-01-52-55-33-34"]))
 
 
 ## 3d party Dependencies
-##### Usage as liberary
+##### Usage as library
 No Dependencies
 ##### Usage in command line
 Tabulate 0.8.6
@@ -46,14 +46,12 @@ Tabulate 0.8.6
 > XX:XX:XX:FF:FE:XX:XX:XX  
 > XX-XX-XX-FF-FE-XX-XX-XX  
 > XX.XX.XX.FF.FE.XX.XX.XX  
-<<<<<<< HEAD
 > XXX:XXX:XXX:XXX  
 > XXX-XXX-XXX-XXX  
 > XXX.XXX.XXX.XXX  
->XXXX:XXFF:FEXX:XXXX  
+> XXXX:XXFF:FEXX:XXXX  
 > XXXX-XXFF-FEXX-XXXX  
 > XXXX.XXFF.FEXX.XXXX  
-=======
 > XXXXXXFFFEXXXXXX  
 > XXX:XXX:XXX:XXX  
 > XXX-XXX-XXX-XXX  
@@ -63,5 +61,5 @@ Tabulate 0.8.6
 > XXXX.XXFF.FEXX.XXXX  
 
 ## Version History
-
+1.0.12  : Refactoring command line arguments and options.
 1.0.11 : Initial PyPI release.
